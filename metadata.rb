@@ -10,13 +10,11 @@ version '2.4.2'
 
 conflicts 'node'
 
-depends 'yum-epel'
 depends 'build-essential'
 depends 'ark'
 depends 'apt'
-depends 'homebrew'
 
-%w(debian ubuntu centos redhat smartos mac_os_x).each do |os|
+%w(debian ubuntu).each do |os|
   supports os
 end
 
